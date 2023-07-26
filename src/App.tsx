@@ -14,30 +14,30 @@ function App() {
     <>
       <Navbar />
       <Routes>
-        <Route path='/ayushgargrk.github.io/Github-Profile-Searching-app/' element={<UserSearch />}></Route>
+        <Route path='/' element={<UserSearch />}></Route>
 
-        <Route path='/ayushgargrk.github.io/Github-Profile-Searching-app/:username' element={<UserProfile />}></Route>
+        <Route path='/:username' element={<UserProfile />}></Route>
 
         <Route
           element={
             <GuardedRoute
               isRouteAccessible={!isLogin}
-              redirectRoute={'/ayushgargrk.github.io/Github-Profile-Searching-app/profile'}
+              redirectRoute={'/profile'}
             />
           }
         >
-          <Route path={'/ayushgargrk.github.io/Github-Profile-Searching-app/login'} element={<LoginPage />} />
+          <Route path={'/login'} element={<LoginPage />} />
         </Route>
 
         <Route
           element={
             <GuardedRoute
               isRouteAccessible={isLogin}
-              redirectRoute={'/ayushgargrk.github.io/Github-Profile-Searching-app/login'}
+              redirectRoute={'/login'}
             />
           }
         >
-          <Route path={'/ayushgargrk.github.io/Github-Profile-Searching-app/profile'} element={<ProfilePage />} />
+          <Route path={'/profile'} element={<ProfilePage />} />
         </Route>
 
       </Routes>
