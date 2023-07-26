@@ -15,7 +15,7 @@ export const Navbar = () => {
 
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-between">
-            <NavLink to='/' className={'d-flex text-decoration-none'}>
+            <NavLink to='/Github-Profile-Searching-app/' className={'d-flex text-decoration-none'}>
                 <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                     <li className="nav-item">
                         <Image src={homelogo} width={100} height={80} className={'mx-2'} />
@@ -29,7 +29,7 @@ export const Navbar = () => {
             {isLogin ? (
                 <ul className='navbar-nav d-flex justify-content-between me-3'>
                     <li className='nav-item active ps-2 pe-2 mx-2'>
-                        <NavLink to={'/profile'}>
+                        <NavLink to={'/Github-Profile-Searching-app/profile'}>
                             <span className='btn btn-primary p-2 ps-4 pe-4'>
                                 Profile
                             </span>
@@ -37,7 +37,7 @@ export const Navbar = () => {
                     </li>
 
                     <li className='nav-item active ps-2 pe-2'>
-                        <NavLink onClick={logOutUser} to={'/login'}>
+                        <NavLink onClick={logOutUser} to={'/Github-Profile-Searching-app/login'}>
                             <span className='btn btn-primary p-2 ps-4 pe-4'>
                                 Logout
                             </span>
@@ -47,7 +47,7 @@ export const Navbar = () => {
             ) : (
                 <ul className='navbar-nav d-flex justify-content-between me-3'>
                     <li className='nav-item active ps-2 pe-2 mx-2'>
-                        <NavLink to={'/login'}>
+                        <NavLink to={'/Github-Profile-Searching-app/login'}>
                             <span className='btn btn-primary p-2 ps-4 pe-4'>
                                 Login
                             </span>

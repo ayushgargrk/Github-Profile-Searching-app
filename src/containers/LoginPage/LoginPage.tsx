@@ -75,7 +75,7 @@ export const LoginPage = () => {
                     <p className='text-center text-light mt-2'>Click on the below button to create a token</p>
                     
                     <div className='d-flex justify-content-center align-items-center'>
-                        <NavLink className='btn btn-primary px-4 mb-4' to = {'https://github.com/settings/tokens'}>Hello</NavLink>
+                        <NavLink className='btn btn-primary px-4 mb-4' to = {'https://github.com/settings/tokens'}>Token</NavLink>
                     </div>
 
                 </div>
