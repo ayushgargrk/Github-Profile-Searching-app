@@ -37,7 +37,7 @@ export const Navbar = () => {
                     </li>
 
                     <li className='nav-item active ps-2 pe-2'>
-                        <NavLink onClick={logOutUser} to={'/Github-Profile-Searching-app/login'}>
+                        <NavLink onClick={logOutUser} to={'/login'}>
                             <span className='btn btn-primary p-2 ps-4 pe-4'>
                                 Logout
                             </span>
