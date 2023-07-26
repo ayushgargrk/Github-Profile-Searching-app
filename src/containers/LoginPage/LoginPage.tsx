@@ -2,6 +2,7 @@ import { selectLoginState, useAppDispatch } from './../../store'
 import { InputBox } from './../../components/InputBox'
 import { loginUser, resetError } from './../../feature/login/loginSlice'
 import { ChangeEvent, useEffect, useState } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export const LoginPage = () => {
 
@@ -74,7 +75,7 @@ export const LoginPage = () => {
                     <p className='text-center text-light mt-2'>Click on the below button to create a token</p>
                     
                     <div className='d-flex justify-content-center align-items-center'>
-                        <button className='btn btn-primary px-4 mb-4'>Hello</button>
+                        <NavLink className='btn btn-primary px-4 mb-4' to = {'https://github.com/settings/tokens'}>Hello</NavLink>
                     </div>
 
                 </div>

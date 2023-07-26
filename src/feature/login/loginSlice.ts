@@ -54,7 +54,6 @@ export const loginUser = createAsyncThunk(
     'login/loginUser',
     async ({username, token}: {username: string, token: string}) => {
         const response = await API.loginUser(username, token);
-        console.log(response);
         if(response.status == 200){
             return {
                 ...response.data,
