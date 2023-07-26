@@ -85,7 +85,7 @@ export const UserSearch = () => {
                                 </ul>
                             ) : (
                                 <div className='my-2'>
-                                    <p className='text-center'>Enter the username you want to search</p>
+                                    <p className='text-center'>Enter the Username you want to search</p>
                                 </div>
                             )
                         }
