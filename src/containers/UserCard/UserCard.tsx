@@ -9,7 +9,7 @@ interface UserCardProps{
 
 export const UserCard = ({username, avatar_url}: UserCardProps) => {
     return(
-        <Link to={`/Github-Profile-Searching-app/${username}`} className={'link-secondary link-underline-opacity-0'}>
+        <Link to={`/ayushgargrk.github.io/Github-Profile-Searching-app/${username}`} className={'link-secondary link-underline-opacity-0'}>
             <div className="d-flex justify-content-between">
                 <div>
                     <Image src={avatar_url} width={150} height={100}/>
